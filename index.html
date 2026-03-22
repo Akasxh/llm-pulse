@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LLM Pulse — AI Model Intelligence</title>
+  <style>
+    :root{--bg:#0a0e17;--surface:#111827;--surface-2:#1a2332;--border:#1e293b;--text:#e2e8f0;--text-dim:#94a3b8;--accent:#38bdf8;--accent-2:#a78bfa;--green:#34d399;--amber:#fbbf24;--red:#f87171;--radius:12px}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+    .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    header{padding:40px 0 30px;border-bottom:1px solid var(--border)}
+    .logo{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:inline-block}
+    .tagline{color:var(--text-dim);margin-top:4px;font-size:15px}
+    .meta-row{display:flex;gap:20px;margin-top:12px;font-size:13px;color:var(--text-dim)}
+    .brief{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin:24px 0}
+    .brief h2{font-size:22px;margin-bottom:8px;font-weight:700}
+    .brief .summary{color:var(--text-dim);font-size:15px;margin-bottom:20px}
+    .highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin:24px 0}
+    .highlight-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:border-color .2s}
+    .highlight-card:hover{border-color:var(--accent)}
+    .highlight-card h3{font-size:16px;margin-bottom:8px;font-weight:600}
+    .highlight-card p{font-size:14px;color:var(--text-dim)}
+    .impact{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;text-transform:uppercase;margin-bottom:8px}
+    .impact-high{background:rgba(248,113,113,.15);color:var(--red)}
+    .impact-medium{background:rgba(251,191,36,.15);color:var(--amber)}
+    .impact-low{background:rgba(52,211,153,.15);color:var(--green)}
+    .section-title{font-size:20px;font-weight:700;margin:32px 0 16px}
+    .models-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+    .model-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:transform .15s,border-color .2s}
+    .model-card:hover{transform:translateY(-2px);border-color:var(--accent-2)}
+    .model-name{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .model-org{color:var(--accent);font-size:12px;font-weight:500}
+    .model-stats{display:flex;gap:16px;margin-top:10px;font-size:13px;color:var(--text-dim)}
+    .model-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+    .tag{background:var(--surface-2);color:var(--text-dim);font-size:11px;padding:2px 6px;border-radius:4px}
+    .trend-box{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin:24px 0;white-space:pre-wrap;font-size:14px;color:var(--text-dim);line-height:1.8}
+    .tier{margin:16px 0}.tier-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+    .tier-frontier .tier-label{color:var(--accent)}.tier-strong .tier-label{color:var(--green)}.tier-efficient .tier-label{color:var(--amber)}
+    .tier-models{display:flex;flex-wrap:wrap;gap:8px}
+    .tier-chip{background:var(--surface-2);border:1px solid var(--border);padding:6px 12px;border-radius:20px;font-size:13px;font-weight:500}
+    .thread{margin:24px 0}
+    .tweet{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin:8px 0;font-size:14px}
+    .tweet-num{color:var(--accent);font-weight:700;font-size:12px;margin-bottom:4px}
+    .watchlist{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 40px}
+    .watch-item{background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.25);color:var(--accent-2);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500}
+    footer{padding:30px 0;border-top:1px solid var(--border);text-align:center;color:var(--text-dim);font-size:13px}
+    footer a{color:var(--accent);text-decoration:none}footer a:hover{text-decoration:underline}
+    .loading{text-align:center;padding:60px 20px;color:var(--text-dim)}
+    .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @media(max-width:640px){.highlights,.models-grid{grid-template-columns:1fr}.logo{font-size:24px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LLM Pulse</div>
+      <div class="tagline">Weekly intelligence brief on AI model performance and trends</div>
+      <div class="meta-row"><span id="lastUpdated">Loading...</span><span id="modelCount"></span></div>
+    </header>
+    <div id="content"><div class="loading"><div class="spinner"></div><p>Loading data...</p></div></div>
+    <footer>
+      <p>Data from <a href="https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard" target="_blank" rel="noopener">Open LLM Leaderboard</a>
+      &middot; Analysis by <a href="https://docs.github.com/en/github-models" target="_blank" rel="noopener">GitHub Models</a>
+      &middot; Built with <a href="https://github.com/1712n/product-kit-template" target="_blank" rel="noopener">Product Kit</a></p>
+    </footer>
+  </div>
+  <script>
+    // All dynamic content is escaped via esc() which uses textContent (safe against XSS)
+    function esc(s){const d=document.createElement("div");d.textContent=String(s||"");return d.innerHTML}
+    function formatNum(n){if(n>=1e6)return(n/1e6).toFixed(1)+"M";if(n>=1e3)return(n/1e3).toFixed(0)+"K";return String(n)}
+
+    function renderAnalysis(a){
+      let h=""
+      if(a&&a.title){
+        h+=`<div class="brief"><h2>${esc(a.title)}</h2><p class="summary">${esc(a.summary||"")}</p></div>`
+        if(a.highlights&&a.highlights.length){
+          h+='<div class="highlights">'
+          a.highlights.forEach(function(hi){
+            var ic=hi.impact==="high"?"impact-high":hi.impact==="medium"?"impact-medium":"impact-low"
+            h+='<div class="highlight-card"><span class="impact '+ic+'">'+esc(hi.impact)+'</span><h3>'+esc(hi.title)+'</h3><p>'+esc(hi.body)+'</p></div>'
+          })
+          h+="</div>"
+        }
+        if(a.modelRankings&&a.modelRankings.length){
+          h+='<div class="section-title">Model Rankings</div>'
+          a.modelRankings.forEach(function(t){
+            var tc=t.tier.toLowerCase().indexOf("frontier")>=0?"tier-frontier":t.tier.toLowerCase().indexOf("strong")>=0?"tier-strong":"tier-efficient"
+            h+='<div class="tier '+tc+'"><div class="tier-label">'+esc(t.tier)+'</div><div class="tier-models">'
+            ;(t.models||[]).forEach(function(m){h+='<span class="tier-chip">'+esc(m)+"</span>"})
+            h+="</div></div>"
+          })
+        }
+        if(a.trendAnalysis){h+='<div class="section-title">Trend Analysis</div><div class="trend-box">'+esc(a.trendAnalysis)+"</div>"}
+        if(a.socialThread&&a.socialThread.length){
+          h+='<div class="section-title">Share Thread</div><div class="thread">'
+          a.socialThread.forEach(function(tw,i){h+='<div class="tweet"><div class="tweet-num">'+(i+1)+"/"+a.socialThread.length+"</div>"+esc(tw)+"</div>"})
+          h+="</div>"
+        }
+        if(a.watchlist&&a.watchlist.length){
+          h+='<div class="section-title">Watchlist</div><div class="watchlist">'
+          a.watchlist.forEach(function(w){h+='<span class="watch-item">'+esc(w)+"</span>"})
+          h+="</div>"
+        }
+      }
+      return h
+    }
+
+    function renderModels(models){
+      var sorted=models.slice().sort(function(a,b){return(b.downloads||0)-(a.downloads||0)})
+      var h='<div class="section-title">Tracked Models</div><div class="models-grid">'
+      sorted.forEach(function(m){
+        var dl=m.downloads?formatNum(m.downloads):"\u2014"
+        var tags=(m.tags||[]).slice(0,4)
+        h+='<a href="'+esc(m.url)+'" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><div class="model-card">'
+        h+='<div class="model-org">'+esc(m.org)+'</div>'
+        h+='<div class="model-name">'+esc(m.name)+'</div>'
+        h+='<div class="model-stats"><span>\u2B07 '+dl+'</span><span>\u2665 '+(m.likes||0)+'</span></div>'
+        if(tags.length){h+='<div class="model-tags">';tags.forEach(function(t){h+='<span class="tag">'+esc(t)+"</span>"});h+="</div>"}
+        h+="</div></a>"
+      })
+      h+="</div>"
+      return h
+    }
+
+    async function loadData(){
+      var el=document.getElementById("content")
+      try{
+        var r=await Promise.all([fetch("data/models.json"),fetch("data/analysis.json").catch(function(){return null})])
+        var models=r[0].ok?await r[0].json():null
+        var analysis=r[1]&&r[1].ok?await r[1].json():null
+        if(!models){el.textContent="No model data available yet.";return}
+        document.getElementById("lastUpdated").textContent="Updated: "+new Date(models.lastUpdated).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})
+        document.getElementById("modelCount").textContent=models.trackedCount+" models tracked"
+        // Using esc() for all dynamic content — safe against injection
+        el.innerHTML=renderAnalysis(analysis)+renderModels(models.models)
+      }catch(e){el.textContent="Failed to load data: "+e.message}
+    }
+    loadData()
+  </script>
+</body>
+</html>
