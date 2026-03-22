@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T12:43:48.943Z",
+  "lastUpdated": "2026-03-22T12:47:15.163Z",
   "benchmarks": [
     {
       "key": "mmlu",
@@ -402,5 +402,375 @@
       ]
     }
   ],
-  "trackedCount": 16
+  "trackedCount": 16,
+  "previousSnapshot": [
+    {
+      "id": "meta-llama/Llama-3.3-70B-Instruct",
+      "org": "meta-llama",
+      "name": "Llama-3.3-70B-Instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "benchmarks": {},
+      "downloads": 558884,
+      "likes": 2666,
+      "lastModified": "2024-12-21T18:28:01.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama-3",
+        "conversational",
+        "en"
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.1-8B-Instruct",
+      "org": "meta-llama",
+      "name": "Llama-3.1-8B-Instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "benchmarks": {},
+      "downloads": 7619708,
+      "likes": 5587,
+      "lastModified": "2024-09-25T17:00:57.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama-3",
+        "conversational",
+        "en"
+      ]
+    },
+    {
+      "id": "meta-llama/Llama-3.1-70B-Instruct",
+      "org": "meta-llama",
+      "name": "Llama-3.1-70B-Instruct",
+      "url": "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "benchmarks": {},
+      "downloads": 1021530,
+      "likes": 898,
+      "lastModified": "2024-12-15T01:55:33.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "facebook",
+        "meta",
+        "pytorch",
+        "llama-3",
+        "conversational",
+        "en"
+      ]
+    },
+    {
+      "id": "mistralai/Mistral-Large-Instruct-2411",
+      "org": "mistralai",
+      "name": "Mistral-Large-Instruct-2411",
+      "url": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411",
+      "benchmarks": {},
+      "downloads": 16970,
+      "likes": 254,
+      "lastModified": "2025-07-28T17:19:27.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "vllm",
+        "safetensors",
+        "mistral",
+        "mistral-common",
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "pt"
+      ]
+    },
+    {
+      "id": "mistralai/Mistral-Small-24B-Instruct-2501",
+      "org": "mistralai",
+      "name": "Mistral-Small-24B-Instruct-2501",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
+      "benchmarks": {},
+      "downloads": 106903,
+      "likes": 948,
+      "lastModified": "2025-07-28T17:26:22.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "vllm",
+        "safetensors",
+        "mistral",
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it",
+        "pt",
+        "zh"
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-72B-Instruct",
+      "org": "Qwen",
+      "name": "Qwen2.5-72B-Instruct",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-72B-Instruct",
+      "benchmarks": {},
+      "downloads": 767084,
+      "likes": 920,
+      "lastModified": "2025-01-12T02:07:38.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "conversational",
+        "en",
+        "arxiv:2309.00071",
+        "arxiv:2407.10671",
+        "base_model:Qwen/Qwen2.5-72B"
+      ]
+    },
+    {
+      "id": "Qwen/Qwen2.5-7B-Instruct",
+      "org": "Qwen",
+      "name": "Qwen2.5-7B-Instruct",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "benchmarks": {},
+      "downloads": 20879098,
+      "likes": 1143,
+      "lastModified": "2025-01-12T02:10:10.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen2",
+        "text-generation",
+        "chat",
+        "conversational",
+        "en",
+        "arxiv:2309.00071",
+        "arxiv:2407.10671",
+        "base_model:Qwen/Qwen2.5-7B"
+      ]
+    },
+    {
+      "id": "google/gemma-2-27b-it",
+      "org": "google",
+      "name": "gemma-2-27b-it",
+      "url": "https://huggingface.co/google/gemma-2-27b-it",
+      "benchmarks": {},
+      "downloads": 392610,
+      "likes": 560,
+      "lastModified": "2024-08-27T19:41:54.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "gemma2",
+        "text-generation",
+        "conversational",
+        "arxiv:2009.03300",
+        "arxiv:1905.07830",
+        "arxiv:1911.11641",
+        "arxiv:1904.09728",
+        "arxiv:1905.10044"
+      ]
+    },
+    {
+      "id": "google/gemma-2-9b-it",
+      "org": "google",
+      "name": "gemma-2-9b-it",
+      "url": "https://huggingface.co/google/gemma-2-9b-it",
+      "benchmarks": {},
+      "downloads": 270711,
+      "likes": 780,
+      "lastModified": "2024-08-27T19:41:49.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "gemma2",
+        "text-generation",
+        "conversational",
+        "arxiv:2009.03300",
+        "arxiv:1905.07830",
+        "arxiv:1911.11641",
+        "arxiv:1904.09728",
+        "arxiv:1905.10044"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V3",
+      "org": "deepseek-ai",
+      "name": "DeepSeek-V3",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "benchmarks": {},
+      "downloads": 942057,
+      "likes": 4013,
+      "lastModified": "2025-03-27T04:01:45.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "deepseek_v3",
+        "text-generation",
+        "conversational",
+        "custom_code",
+        "arxiv:2412.19437",
+        "eval-results",
+        "text-generation-inference",
+        "endpoints_compatible"
+      ]
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "org": "deepseek-ai",
+      "name": "DeepSeek-R1-Distill-Llama-70B",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "benchmarks": {},
+      "downloads": 100894,
+      "likes": 755,
+      "lastModified": "2025-02-24T03:31:15.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "arxiv:2501.12948",
+        "license:mit",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "region:us"
+      ]
+    },
+    {
+      "id": "microsoft/phi-4",
+      "org": "microsoft",
+      "name": "phi-4",
+      "url": "https://huggingface.co/microsoft/phi-4",
+      "benchmarks": {},
+      "downloads": 982950,
+      "likes": 2220,
+      "lastModified": "2025-11-24T16:57:37.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "phi3",
+        "text-generation",
+        "phi",
+        "nlp",
+        "math",
+        "code",
+        "chat",
+        "conversational"
+      ]
+    },
+    {
+      "id": "microsoft/Phi-3.5-mini-instruct",
+      "org": "microsoft",
+      "name": "Phi-3.5-mini-instruct",
+      "url": "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "benchmarks": {},
+      "downloads": 713808,
+      "likes": 965,
+      "lastModified": "2025-12-10T20:22:56.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "phi3",
+        "text-generation",
+        "nlp",
+        "code",
+        "conversational",
+        "custom_code",
+        "multilingual",
+        "arxiv:2404.14219"
+      ]
+    },
+    {
+      "id": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+      "org": "nvidia",
+      "name": "Llama-3.1-Nemotron-70B-Instruct-HF",
+      "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+      "benchmarks": {},
+      "downloads": 11154,
+      "likes": 2063,
+      "lastModified": "2025-04-13T04:12:19.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "nvidia",
+        "llama3.1",
+        "conversational",
+        "en",
+        "dataset:nvidia/HelpSteer2",
+        "arxiv:2410.01257"
+      ]
+    },
+    {
+      "id": "CohereForAI/c4ai-command-r-plus-08-2024",
+      "org": "CohereForAI",
+      "name": "c4ai-command-r-plus-08-2024",
+      "url": "https://huggingface.co/CohereForAI/c4ai-command-r-plus-08-2024",
+      "benchmarks": {},
+      "downloads": 3538,
+      "likes": 281,
+      "lastModified": "2025-10-30T06:37:39.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "cohere",
+        "text-generation",
+        "conversational",
+        "en",
+        "fr",
+        "de",
+        "es",
+        "it"
+      ]
+    },
+    {
+      "id": "01-ai/Yi-1.5-34B-Chat",
+      "org": "01-ai",
+      "name": "Yi-1.5-34B-Chat",
+      "url": "https://huggingface.co/01-ai/Yi-1.5-34B-Chat",
+      "benchmarks": {},
+      "downloads": 12759,
+      "likes": 275,
+      "lastModified": "2024-08-27T07:11:05.000Z",
+      "pipeline": "text-generation",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "llama",
+        "text-generation",
+        "conversational",
+        "arxiv:2403.04652",
+        "license:apache-2.0",
+        "text-generation-inference",
+        "endpoints_compatible",
+        "deploy:azure"
+      ]
+    }
+  ]
 }
