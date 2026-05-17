@@ -1,21 +1,21 @@
 {
-  "title": "LLM Performance Insights: Mistral and Qwen Models Gain Traction",
-  "date": "2023-10-10",
-  "summary": "This week, the LLM landscape shows a notable rise in downloads for Mistral and Qwen models, indicating increasing interest in diverse architectures. Llama-3.1-8B continues to dominate in popularity, while performance benchmarks reveal strengths in reasoning tasks for several models.",
+  "title": "LLM Performance Insights: May 2026 Trends and Rankings",
+  "date": "2026-05-17",
+  "summary": "This week’s analysis reveals a competitive landscape among LLMs, with Llama-3.1-8B-Instruct leading in downloads. Notably, Mistral models show promise in efficiency, while Qwen models maintain strong engagement metrics.",
   "highlights": [
     {
-      "title": "Mistral's Emerging Popularity",
-      "body": "Mistral-Small-24B-Instruct has achieved 92K downloads, reflecting a growing preference for smaller, efficient models. Its performance in reasoning tasks is competitive, positioning it well for practical applications.",
+      "title": "Llama-3.1-8B-Instruct Dominates Downloads",
+      "body": "With over 10 million downloads, Llama-3.1-8B-Instruct continues to attract users, reflecting its robust performance and utility in various applications.",
       "impact": "high"
     },
     {
-      "title": "Qwen Models on the Rise",
-      "body": "Qwen2.5-7B-Instruct leads in downloads with 14M, showcasing its appeal for developers looking for effective instruction-following capabilities. Its high engagement suggests a strong community interest.",
+      "title": "Mistral Models Gaining Traction",
+      "body": "The Mistral-Small-24B-Instruct model is emerging as a strong contender in the efficient tier, indicating a shift towards smaller, more performant models.",
       "impact": "medium"
     },
     {
-      "title": "Llama-3.1-8B Remains Dominant",
-      "body": "With 9.37M downloads and 5.8K likes, Llama-3.1-8B continues to be a favorite, especially for knowledge-intensive applications, but faces competition from newer models.",
+      "title": "Qwen2.5-72B-Instruct Shows Strong User Engagement",
+      "body": "Despite lower download numbers compared to Llama models, Qwen2.5-72B-Instruct has a high engagement ratio, suggesting strong user satisfaction and potential for growth.",
       "impact": "medium"
     }
   ],
@@ -24,13 +24,13 @@
       "tier": "Frontier",
       "models": [
         "Llama-3.1-8B-Instruct",
-        "Qwen2.5-7B-Instruct"
+        "Llama-3.3-70B-Instruct"
       ]
     },
     {
       "tier": "Strong",
       "models": [
-        "Mistral-Small-24B-Instruct",
+        "Qwen2.5-72B-Instruct",
         "phi-4",
         "DeepSeek-V3"
       ]
@@ -38,19 +38,18 @@
     {
       "tier": "Efficient",
       "models": [
-        "gemma-2-9b-it",
-        "Llama-3.3-70B-Instruct",
-        "Mistral-Large-Instruct-2411"
+        "Mistral-Small-24B-Instruct-2501",
+        "gemma-2-9b-it"
       ]
     }
   ],
-  "trendAnalysis": "The increasing downloads for Mistral and Qwen models suggest a shift towards more specialized architectures that prioritize efficiency and instruction-following capabilities. Mistral's smaller models are particularly appealing for applications where resource constraints are a consideration, while Qwen's strong performance in user engagement indicates a solid community backing. In contrast, Llama-3.1-8B remains a staple for developers focused on knowledge tasks, but its dominance may be challenged by the rapid advancements in newer models.\n\nBenchmark performance reveals that while Llama models excel in knowledge and instruction-following tasks, Mistral and Qwen are closing the gap in reasoning capabilities. This trend indicates a potential diversification in model selection criteria, where developers may prioritize specific strengths over sheer popularity. As the competition heats up, monitoring user feedback and benchmark results will be critical for understanding the evolving landscape.",
+  "trendAnalysis": "The LLM landscape is increasingly favoring models that balance performance and efficiency. The dominance of Llama-3.1-8B-Instruct in downloads suggests that users prioritize accessibility and ease of integration. Meanwhile, the Mistral models indicate a growing interest in smaller, efficient architectures that do not compromise on performance metrics. This trend aligns with the industry's push towards sustainable AI solutions, where resource efficiency is paramount.\n\nMoreover, user engagement metrics reveal that while download numbers are significant, the quality of interaction and user satisfaction are critical for long-term adoption. Qwen models, despite having fewer downloads, demonstrate higher engagement, indicating a potential shift in user preference towards models that excel in specific tasks rather than sheer size. This trend may influence future model development strategies, emphasizing task-specific performance over general capabilities.",
   "watchlist": [
-    "Mistral-Small-24B-Instruct"
+    "Mistral-Small-24B-Instruct-2501"
   ],
   "socialThread": [
-    "🚀 Mistral and Qwen models are gaining traction in the LLM landscape! Check out this week's insights on performance and trends. #AI #LLM",
-    "📊 Llama-3.1-8B remains a favorite, but Mistral's smaller models are proving their worth. Efficiency is key! #MachineLearning",
-    "🔍 Keep an eye on Mistral-Small-24B-Instruct—its growing popularity suggests a shift towards more specialized LLMs. #AITrends"
+    "🚀 Llama-3.1-8B-Instruct leads the pack with 10M+ downloads! Its performance is unmatched in the current LLM landscape. #AI #LLM",
+    "📈 Mistral models are gaining traction for their efficiency. Watch out for Mistral-Small-24B-Instruct as a strong contender! #MachineLearning",
+    "🤖 Qwen2.5-72B-Instruct shows high user engagement, indicating satisfaction and potential growth. Are smaller models the future? #AITrends"
   ]
 }
