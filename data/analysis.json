@@ -1,21 +1,21 @@
 {
-  "title": "LLM Performance Insights: May 2026 Trends and Rankings",
-  "date": "2026-05-17",
-  "summary": "This week’s analysis reveals a competitive landscape among LLMs, with Llama-3.1-8B-Instruct leading in downloads. Notably, Mistral models show promise in efficiency, while Qwen models maintain strong engagement metrics.",
+  "title": "LLM Landscape Insights: May 2026",
+  "date": "2026-05-24",
+  "summary": "This week’s analysis reveals a competitive landscape among LLMs, with Llama-3.1-8B-Instruct leading in downloads and user engagement. Notably, Mistral models show strong performance in efficiency metrics, while DeepSeek's offerings are gaining traction in the market.",
   "highlights": [
     {
-      "title": "Llama-3.1-8B-Instruct Dominates Downloads",
-      "body": "With over 10 million downloads, Llama-3.1-8B-Instruct continues to attract users, reflecting its robust performance and utility in various applications.",
+      "title": "Llama Dominance Continues",
+      "body": "Llama-3.1-8B-Instruct leads with over 10.5 million downloads, indicating strong adoption for instruction-based tasks. Its performance across benchmarks remains robust, making it a preferred choice for developers.",
       "impact": "high"
     },
     {
-      "title": "Mistral Models Gaining Traction",
-      "body": "The Mistral-Small-24B-Instruct model is emerging as a strong contender in the efficient tier, indicating a shift towards smaller, more performant models.",
+      "title": "Mistral's Efficient Models",
+      "body": "Mistral-Small-24B-Instruct has achieved notable engagement with 74K downloads and 958 likes, suggesting a growing preference for smaller, efficient models that maintain competitive performance.",
       "impact": "medium"
     },
     {
-      "title": "Qwen2.5-72B-Instruct Shows Strong User Engagement",
-      "body": "Despite lower download numbers compared to Llama models, Qwen2.5-72B-Instruct has a high engagement ratio, suggesting strong user satisfaction and potential for growth.",
+      "title": "DeepSeek's Rising Star",
+      "body": "DeepSeek-V3 has surpassed 1.2 million downloads, reflecting increasing interest in its capabilities. Its performance in multi-step reasoning tasks positions it as a strong contender in the LLM space.",
       "impact": "medium"
     }
   ],
@@ -24,32 +24,32 @@
       "tier": "Frontier",
       "models": [
         "Llama-3.1-8B-Instruct",
-        "Llama-3.3-70B-Instruct"
+        "phi-4"
       ]
     },
     {
       "tier": "Strong",
       "models": [
         "Qwen2.5-72B-Instruct",
-        "phi-4",
+        "Mistral-Small-24B-Instruct",
         "DeepSeek-V3"
       ]
     },
     {
       "tier": "Efficient",
       "models": [
-        "Mistral-Small-24B-Instruct-2501",
-        "gemma-2-9b-it"
+        "gemma-2-9b-it",
+        "Phi-3.5-mini-instruct"
       ]
     }
   ],
-  "trendAnalysis": "The LLM landscape is increasingly favoring models that balance performance and efficiency. The dominance of Llama-3.1-8B-Instruct in downloads suggests that users prioritize accessibility and ease of integration. Meanwhile, the Mistral models indicate a growing interest in smaller, efficient architectures that do not compromise on performance metrics. This trend aligns with the industry's push towards sustainable AI solutions, where resource efficiency is paramount.\n\nMoreover, user engagement metrics reveal that while download numbers are significant, the quality of interaction and user satisfaction are critical for long-term adoption. Qwen models, despite having fewer downloads, demonstrate higher engagement, indicating a potential shift in user preference towards models that excel in specific tasks rather than sheer size. This trend may influence future model development strategies, emphasizing task-specific performance over general capabilities.",
+  "trendAnalysis": "The LLM market is increasingly favoring models that balance performance with efficiency. Mistral's smaller models are gaining traction, appealing to developers looking for cost-effective solutions without sacrificing capability. Additionally, the strong download numbers for Llama-3.1-8B-Instruct suggest that instruction-following tasks are a key area of focus for users, emphasizing the importance of optimizing these models for real-world applications. Meanwhile, DeepSeek's rapid growth indicates that innovative architectures and training techniques are resonating with the community, potentially setting new benchmarks for future models.",
   "watchlist": [
-    "Mistral-Small-24B-Instruct-2501"
+    "Mistral-Large-Instruct-2411"
   ],
   "socialThread": [
-    "🚀 Llama-3.1-8B-Instruct leads the pack with 10M+ downloads! Its performance is unmatched in the current LLM landscape. #AI #LLM",
-    "📈 Mistral models are gaining traction for their efficiency. Watch out for Mistral-Small-24B-Instruct as a strong contender! #MachineLearning",
-    "🤖 Qwen2.5-72B-Instruct shows high user engagement, indicating satisfaction and potential growth. Are smaller models the future? #AITrends"
+    "🚀 Llama-3.1-8B-Instruct leads the pack with 10.5M downloads! A top choice for instruction-based tasks. #LLM #AI",
+    "📊 Mistral's efficient models are gaining traction! Check out Mistral-Small-24B-Instruct for a balance of performance and cost. #AI #MachineLearning",
+    "🌟 DeepSeek-V3 is on the rise with over 1.2M downloads! Its multi-step reasoning capabilities are turning heads in the LLM landscape. #AI #DeepLearning"
   ]
 }
