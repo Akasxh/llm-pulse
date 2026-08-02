@@ -1,55 +1,10 @@
 {
-  "title": "LLM Performance Insights: A Deep Dive into Downloads and User Engagement",
-  "date": "2023-10-26",
-  "summary": "This week’s analysis reveals significant user engagement trends across various LLMs, with Llama-3.1-8B-Instruct leading in downloads and likes. Meanwhile, Mistral models are gaining traction, indicating a shift towards smaller, more efficient models.",
-  "highlights": [
-    {
-      "title": "Llama-3.1-8B-Instruct Dominates Engagement",
-      "body": "With over 8 million downloads and nearly 6400 likes, Llama-3.1-8B-Instruct is the most popular model, indicating strong user preference for mid-sized models with effective instruction-following capabilities.",
-      "impact": "high"
-    },
-    {
-      "title": "Mistral Models Gaining Popularity",
-      "body": "Mistral-Small-24B-Instruct has achieved 85K downloads, reflecting a growing interest in smaller models that balance performance and resource efficiency.",
-      "impact": "medium"
-    },
-    {
-      "title": "DeepSeek Models Show Strong User Engagement",
-      "body": "DeepSeek-V3 has garnered 1228K downloads and 4102 likes, suggesting a robust user base that values its capabilities in multi-step reasoning.",
-      "impact": "medium"
-    }
-  ],
-  "modelRankings": [
-    {
-      "tier": "Frontier",
-      "models": [
-        "Llama-3.1-8B-Instruct",
-        "DeepSeek-V3"
-      ]
-    },
-    {
-      "tier": "Strong",
-      "models": [
-        "Mistral-Small-24B-Instruct",
-        "phi-4",
-        "Qwen2.5-7B-Instruct"
-      ]
-    },
-    {
-      "tier": "Efficient",
-      "models": [
-        "Yi-1.5-34B-Chat",
-        "gemma-2-9b-it"
-      ]
-    }
-  ],
-  "trendAnalysis": "The data indicates a clear preference for models that offer a balance of size and performance, as evidenced by the popularity of Llama-3.1-8B-Instruct. Additionally, the success of Mistral's smaller models suggests that users are increasingly prioritizing efficiency and lower resource consumption, likely driven by deployment constraints in production environments.\n\nMoreover, the engagement metrics for DeepSeek models highlight the importance of reasoning capabilities in user satisfaction. As multi-step reasoning becomes more critical in applications, models that excel in this area are likely to see increased adoption. This trend underscores the need for developers to focus on enhancing reasoning abilities in their models to meet user demands effectively.",
-  "watchlist": [
-    "Mistral-Large-Instruct-2411"
-  ],
-  "socialThread": [
-    "📊 Llama-3.1-8B-Instruct leads the pack with 8M+ downloads! User preference is shifting towards mid-sized models. #LLM #AI",
-    "🔍 Mistral models are gaining traction! Smaller models like Mistral-Small-24B-Instruct show that efficiency is key. #MachineLearning",
-    "💡 DeepSeek-V3 is making waves with strong user engagement! Multi-step reasoning capabilities are becoming a must-have. #AITrends"
-  ]
+  "title": "LLM Pulse — Weekly Brief",
+  "date": "2026-08-02",
+  "summary": "Analysis will be generated on the next scheduled run.",
+  "highlights": [],
+  "modelRankings": [],
+  "trendAnalysis": "",
+  "watchlist": [],
+  "socialThread": []
 }
